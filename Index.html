@@ -30,10 +30,19 @@
     </div>
 
     <button onclick="gerarSenha()">Gerar Senhas</button>
+    <button onclick="limparSenhas()">Limpar Senhas</button>
    
     <br>
     <textarea id="senhaContainer" cols="30" rows="5" readonly></textarea>
 
     <script src="Js/script01.js"></script>
+
+    <script>
+        function limparSenhas() {
+            document.getElementById('senhaContainer').value = "";
+        }
+    </script>
 </body>
 </html>
+
+
